@@ -389,11 +389,15 @@ input[type="radio"].visually-hidden {
     stroke: #bdbbbc;
 }
 
-.motel-search__form {
+.search-form__wrapper {
     position: absolute;
 
     bottom: -395px;
+    display: none;
 
+}
+
+.motel-search__form {
     display: flex;
     flex-wrap: wrap;
 
@@ -404,11 +408,13 @@ input[type="radio"].visually-hidden {
     width: 568px;
     height: 395px;
 
-    padding: 55px;
+    padding:  50px 55px;
 
     background-color: #fff;
+}
 
-    display: none;
+.modal-show {
+    display: block;
 }
 
 .search-form__text {
@@ -416,27 +422,71 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: center;
 
+    box-sizing: border-box;
+
+    height: 38px;
     width: 100%;
 
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.search-form__text_small {
+
+    width: 226px;
+}
+
+.search-form__text_small-margin {
+    padding-left: 30px;
 }
 
 .search-form__input {
+    position: relative;
+
     width: 346px;
     height: 38px;
 
     padding-left: 10px;
 
-    font: inherit;
+    box-sizing: border-box;
 
+    font: inherit;
     text-transform: uppercase;
 
     background-color: #f2f2f2;
 
     border: none;
 } 
+
+.search-form__input_icon{
+    background: url("data:../images/<svg xmlns='http://www.w3.org/2000/svg' width='21' height='22' viewBox='0 0 21 22'><path d='M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z'/><path d='M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z'/></svg>");
+    background-position: 317px center;
+    background-repeat: no-repeat;
+}
+
+/* .search-form__input_icon:active{
+    background-image: url(../images/calendar_active.svg);
+}
+
+.search-form__input_icon:hover{
+    background-image: url(../images/calendar-focus.svg);
+} */
+
+.search-form__input_small {
+    width: 114px;
+}
+
+.search-form__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    width: 100%;
+}
 
 .search-form__button {
     cursor: pointer;
@@ -446,8 +496,19 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     line-height: 26px;
     color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
 
     background-color: #81b3d2;
 
     border: none;
+}
+
+.search-form__button:hover {
+    background-color: #669ec0;
+}
+
+.search-form__button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
 }
