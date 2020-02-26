@@ -263,6 +263,8 @@ input[type="radio"].visually-hidden {
     padding-top: 55px;
 
     background-color: #fff;
+
+    z-index: 5;
 }
 
 .motel-search__title {
@@ -305,29 +307,28 @@ input[type="radio"].visually-hidden {
     color: #766860;
 }
 
-.footer__wrapper {
-    padding-top: 475px;
+.main__map {
+    min-height: 590px;
 
     background-image: url(../backgrounds/back-map.jpg);
     background-position: top center;
-    background-repeat: no-repeat;
+
+    /* z-index: ; */
 }
 
 .page__footer {
+    position: absolute;
+
     display: flex;
     justify-content: space-between;
 
+    margin-top: -120px;
     padding-top: 36px;
     padding-bottom: 36px;
 
     background-color: rgba(254, 254, 254, 0.8);
-}
 
-.main__map {
-    min-height: 470px;
-
-    background-image: url(../backgrounds/back-map.jpg);
-    background-position: top center;
+    /* z-index: 2; */
 }
 
 .footer__column {
@@ -397,11 +398,16 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form__wrapper {
-    position: absolute;
+    position: fixed;
 
-    bottom: -395px;
+    /* bottom: -395px; */
     display: none;
 
+    left: 316px;
+    top: 50px;
+    /* margin-left: -284px; */
+
+    z-index: 1;
 }
 
 .motel-search__form {
@@ -422,7 +428,18 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
     display: block;
+
+    animation-name: bounce;
+    animation-duration: 0.5s;
 }
+
+@keyframes bounce{
+    0% {transform: translateY(-300px);}
+    30% {transform: translateY(20px);}
+    100% {transform: translateY(0px);}
+}
+
+
 
 .search-form__text {
     display: flex;
@@ -461,17 +478,20 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
 
     font: inherit;
-    text-transform: uppercase;
 
     background-color: #f2f2f2;
 
     border: none;
 } 
 
+.search-form__input::placeholder {
+    text-transform: uppercase;
+    color: #000000;
+}
+
 .search-form__input_icon{
-    /* background: url(); */
-    background-position: 317px center;
-    background-repeat: no-repeat;
+   position: absolute;
+    
 }
 
 /* .search-form__input_icon:active{
