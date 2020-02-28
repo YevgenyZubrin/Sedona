@@ -142,25 +142,26 @@
                 </section>
 
                 <section class="main__search motel-search">
-                    <h3 class="motel-search__title">заинтересовались?</h3>
-                    <p class="motel-search__text">
-                        укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-                    </p>
-                    <button class="button motel-search__button" type="button">поиск гостиниц в седоне</button>
+                    <div class="main-search__content">
+                        <h3 class="motel-search__title">заинтересовались?</h3>
+                        <p class="motel-search__text">
+                            укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+                        </p>
+                        <button class="button motel-search__button" type="button">поиск гостиниц в седоне</button>
+                    </div>
 
                     <div class="modal-search search-form__wrapper">
                         <form class=" motel-search__form search-form" action="https://echo.htmlacademy.ru"
                             method="POST">
                             <p class="search-form__text">
                                 <label class="search-form__label" for="arrival_date">дата заезда:</label>
-                                <input class="search-form__input" name="arrival_date"
-                                    type="text" id="arrival_date" placeholder="24 Апреля 2020" value="">
-                                <input type="date">
+                                <input class="search-form__input" name="arrival_date" 
+                                    type="date" id="arrival_date" placeholder="24 Апреля 2020" value="{{ 'now'|date('d.m.Y') }}">
                             </p>
                             <p class="search-form__text">
-                                <label class="search-form__label" for="date_of_departure">дата заезда:</label>
+                                <label class="search-form__label" for="date_of_departure">дата выезда:</label>
                                 <input class="search-form__input " name="date_of_departure"
-                                    type="text" id="date_of_departure" placeholder="4 Июля 2020" value="">
+                                    type="date" id="date_of_departure" placeholder="4 Июля 2020" value="">
                             </p>
                             <div class="search-form__text-wrapper">
                                 <p class="search-form__text search-form__text_small">
@@ -200,7 +201,7 @@
             <div class="footer__column footer-social">
                 <ul class="footer-social__list">
                     <li class="item footer-social__item">
-                        <a class="link footer-social__link" href="#">
+                        <a class="link footer-social__link" href="https://twitter.com/hashtag/%D1%81%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0">
                             <span class="visually-hidden">twitter</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="17" height="15" viewBox="0 0 17 15">
@@ -212,7 +213,7 @@
                         </a>
                     </li>
                     <li class="item footer-social__item">
-                        <a class="link footer-social__link" href="#">
+                        <a class="link footer-social__link" href="https://www.facebook.com/VisitSedona/">
                             <span class="visually-hidden">facebook</span>
                             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px"
@@ -222,7 +223,7 @@
                         </a>
                     </li>
                     <li class="item footer-social__item">
-                        <a class="link footer-social__link" href="#">
+                        <a class="link footer-social__link" href="https://www.youtube.com/watch?v=4GzE_TxFFeg">
                             <span class="visually-hidden">youtube</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="20" height="16" viewBox="0 0 20 16">
