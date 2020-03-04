@@ -778,8 +778,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-field__label {
-    margin-left: 15px;
-
+    display: flex;
+    align-items: center;
 }
 
 .filters-field__input {
@@ -793,6 +793,8 @@ input[type="radio"].visually-hidden {
 
     width: 26px;
     height: 23px;
+
+    margin-right: 15px;
 
     background-image: url(../images/checkbox-off.svg);
     background-position: 0 0;
