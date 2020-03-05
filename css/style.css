@@ -181,6 +181,10 @@ hr {
     padding-right: 45px;
 }
 
+.features__item_grey {
+    background-color: #eeeeee;
+}
+
 .feature__wrapper_higher{
     min-height: 330px;
 
@@ -907,6 +911,10 @@ hr {
     text-decoration: none;
 }
 
+.sorting__link_current:active {
+    color: #81b3d2;
+}
+
 .sorting__arrows {
     display: flex;
 
@@ -920,7 +928,7 @@ hr {
 	border-right: 6px solid transparent;
     border-bottom: 11px solid #81b3d2;
     border-top: none;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .sorting__arrow_down {
@@ -930,17 +938,29 @@ hr {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
     border-top: 11px solid #cacaca;
-    background-color: #fff;
+    background-color: transparent;
 
     margin-right: 12px;
 }
 
-.main {
-    background-color: #fff;
+.sorting__arrow_down:hover {
+    border-top: 11px solid #000;
 }
 
-.main__list {
-    
+.sorting__arrow_up:hover {
+    border-bottom: 11px solid #000;
+}
+
+.sorting__arrow_down:active {
+    border-top: 11px solid #81b3d2;
+}
+
+.sorting__arrow_up:active {
+    border-bottom: 11px solid #81b3d2;
+}
+
+.main_white {
+    background-color: #fff;
 }
 
 .main__item {
@@ -949,13 +969,22 @@ hr {
     padding: 30px 72px;
 }
 
-.item-wrapper__image {
+.main-item__link {
+    display: flex;
+    align-items: flex-end;
+
     margin-right: 30px;
 }
 
 .item-wrapper__title {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
+
+    margin-bottom: 11px;
+}
+
+.item-wrapper__text {
+    margin-bottom: 16px;
 }
 
 .item-wrapper__buttons {
@@ -1004,4 +1033,51 @@ hr {
 
 .item-wrapper__link:active {
     color: #b2b2b2;
+}
+
+.item-wrapper__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+
+.raiting__result {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #7e7e7e;
+
+    background-color: #f2f2f2;
+
+    padding: 3px 16px;
+}
+
+.raiting__stars_four-stars {
+    width: 72px;
+    height: 17px;
+
+    background-image: url(../images/star.svg);
+    background-position: top right;
+    background-repeat: repeat;
+}
+
+.raiting__stars_three-stars {
+    width: 54px;
+    height: 17px;
+
+    background-image: url(../images/star.svg);
+    background-position: top right;
+    background-repeat: repeat;
+}
+
+.raiting__stars_two-stars {
+    width: 36px;
+    height: 17px;
+
+    background-image: url(../images/star.svg);
+    background-position: top right;
+    background-repeat: repeat;
 }
