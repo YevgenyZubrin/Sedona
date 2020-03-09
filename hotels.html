@@ -75,10 +75,10 @@
                         <legend class="filters-field__title">стоимость в сутки (р):</legend>
                         <div class="filters-field__cost">
                             <span class="filters-field__cost_start">от 0</span>
-                            <span class="filters-field__cost_end">до 3000</span>
+                            <span class="filters-field__cost_end">до<input class="filters-field__text" type="text" placeholder="" value=""></span>
                         </div>
 
-                            <input class="filters-field__range" type="range">
+                            <input class="filters-field__range" type="range" name="cost_range" max="5000" min="0" step="1000" value="0">
                             
                             <button class="filters-field__button" type="submit">показать</button>
 
@@ -104,7 +104,7 @@
                     </ul>
                 </div>
                 <div class="sorting__arrows">
-                    <button class="sorting__arrow_down" type="button" ></button>
+                    <button class="sorting__arrow_down" type="button"></button>
                     <button class="sorting__arrow_up" type="button"></button>
                 </div>
             </section>
@@ -251,8 +251,10 @@
                 </a>
             </div>
         </footer>
-    </div>
 
+        <script src="js/range.js"></script>
+
+    </div>
 </body>
 
 </html>
