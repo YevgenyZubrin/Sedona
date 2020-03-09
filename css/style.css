@@ -463,7 +463,7 @@ hr {
     display: block;
 
     animation-name: bounce;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
 }
 
 @keyframes bounce{
@@ -586,6 +586,8 @@ hr {
     height: 38px;
 
     top: 0;
+
+    background-color: #f2f2f2;
 
     border: none;
 }
@@ -786,6 +788,8 @@ hr {
     top: 6px;
     left: 50%;
 
+    margin-left: -1px;
+
     background-color: #fff;
 }
 
@@ -835,8 +839,6 @@ hr {
 
     outline: none;
 
-    overflow: hidden;
-
     width: 100%;
     height: 2px;
 
@@ -848,23 +850,13 @@ hr {
     margin-bottom: 20px;
 }
 
-.filters-field__range::-webkit-slider-runnable-track {
-    height: 10px;
-    -webkit-appearance: none;
-    color: #fff;
-}
-
 .filters-field__range::-webkit-slider-thumb {
     -webkit-appearance: none;
-
-    /* position: relative;  */
 
     width: 20px;
     height: 20px;
 
     border-radius: 100%;
-
-    box-shadow: -318px 0px 0px 318px #fff;
 
     background-color: #fff;
 
@@ -897,7 +889,7 @@ hr {
     width: 4px;
     height: 4px;
 
-    background-color: #ababab;
+    background-color: #000;
 }
 
 .filters-field__button {
