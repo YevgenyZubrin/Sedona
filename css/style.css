@@ -9,6 +9,8 @@ body {
     text-transform: uppercase;
 
     background-color: #f2f2f2;
+
+    min-width: 1200px;
 }
 
 .mian-container__features {
@@ -62,8 +64,10 @@ hr {
 }
 
 .body__container {
-    max-width: 1200px;
-    min-width: 1200px;
+    /* max-width: 1200px; */
+    /* min-width: 1200px; */
+
+    width: 1200px;
 
     margin: 0 auto;
 
